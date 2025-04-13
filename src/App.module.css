@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+button {
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+li {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
