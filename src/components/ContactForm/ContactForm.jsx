@@ -30,20 +30,20 @@ const ContactForm = ({ onAddContact }) => {
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <label>
+      <Form className={styles.form}>
+        <label className={styles.label}>
           Name
-          <Field type="text" name="name" />
+          <Field className={styles.input} type="text" name="name" />
           <ErrorMessage name="name" component="div" style={{ color: 'red' }} />
         </label>
 
-        <label>
+        <label className={styles.label}>
           Number
-          <Field type="text" name="number" />
+          <Field className={styles.input} type="text" name="number" />
           <ErrorMessage name="number" component="div" style={{ color: 'red' }} />
         </label>
 
-        <button type="submit">Add contact</button>
+        <button className={styles.button} type="submit">Add contact</button>
       </Form>
     </Formik>
   );

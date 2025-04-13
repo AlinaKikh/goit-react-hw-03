@@ -3,9 +3,10 @@ import styles from "./SearchBox.module.css";
 const SearchBox = ({ value, onFilterChange }) => {
     return (
       <div>
-        <label>
+        <label className={styles.label}>
           Find contacts by name
           <input
+          className={styles.input}
             type="text"
             value={value}
             onChange={(e) => onFilterChange(e.target.value)}

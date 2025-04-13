@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div>
-      <h1>Phonebook</h1>
+      <h1 className="styles.h1">Phonebook</h1>
       <ContactForm onAddContact={addContact} />
       <SearchBox value={filter} onFilterChange={setFilter} />
       <ContactList contacts={filteredContacts} onDelete={deleteContact} />
